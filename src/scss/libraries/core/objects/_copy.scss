@@ -11,18 +11,7 @@
     font-size: $font-size;
     line-height: $line-height;
     margin-bottom: $base-spacing-unit/2;
-
-    .section--primary &, 
-    .section--secondary &, 
-    .section--tertiary &, 
-    .section--medium &,
-    .section--dark & {
-      color: $light-color;
-    }
-
-    .section--light & {
-      color: $dark-color;
-    }
+    color: $dark-color;
   }
 
   b, strong {
@@ -45,11 +34,12 @@
 ============================================================ */
 
   small {
+    color: lighten($dark-color, 40);
     display: block;
     font-family: $base-copy-font;
-    font-size: $font-size*.8;
-    line-height: $line-height*.8;
-    font-weight: 700;
+    font-size: $font-size*.9;
+    line-height: $line-height*.9;
+    font-weight: 500;
     margin-bottom: $base-spacing-unit/2;
 
     a {
@@ -57,42 +47,17 @@
       line-height: $line-height*.8;
     }
 
-    .section--primary &,
-    .section--secondary &,
-    .section--tertiary &,
-    .section--medium &,
-    .section--dark & {
-      color: $light-color;
+    .section-primary &,
+    .section-secondary &,
+    .section-tertiary &,
+    .section-medium &,
+    .section-dark & {
+      color: $dark-color;
 
       a {
-        color: $light-color;
+        color: $dark-color;
       }
     }
   }
-
-
-
-
-/* ============================================================
-
-    $ASIDE
-
-============================================================ */
-
-  aside {
-    
-  }
-
-
-
-
-/* ============================================================
-
-    $FONT AWESOME OVERRIDES
-
-============================================================ */
-
-
-
 
 }

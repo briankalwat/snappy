@@ -54,7 +54,12 @@ body {
 
 hr {
     border: 0px solid transparent;
-    border-top: $border-size*2 solid lighten($medium-color, 40);
+    border-top: $border-size*2 solid lighten($medium-color, 42);
+    margin-bottom: $base-spacing-unit;
+
+    .grid + & {
+        margin-top: $base-spacing-unit/2;
+    }
 
     &.short {
         margin: $base-spacing-unit auto;
@@ -63,10 +68,6 @@ hr {
 
     &.hidden {
         border-width: 0px;
-    }
-
-    .section--dark & {
-        border-color: darken($secondary-color, 15);
     }
 }
 

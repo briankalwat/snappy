@@ -1,23 +1,19 @@
 @if $use-lists == true {
 
   ul, ol {
+    color: $dark-color;
     display: inline-block;
   	font-family: $base-copy-font;
     font-size: $font-size;
     line-height: $line-height;
-    list-style: none;
-  	margin: 0 0 $base-spacing-unit/2 0;
+  	margin: 0 0 $base-spacing-unit/2 $base-spacing-unit/3;
 
     li {
-		margin-bottom: $base-spacing-unit/4;
+		  margin-bottom: $base-spacing-unit/8;
 
-		.section--primary &, 
-	    .section--secondary &, 
-	    .section--tertiary &, 
-	    .section--medium &,
-	    .section--dark & {
-	    	color: $light-color;
-	    }
+      &:last-child {
+        margin-bottom: 0px;
+      }
     }
 
     &.bulleted {
