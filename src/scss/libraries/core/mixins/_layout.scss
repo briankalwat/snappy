@@ -116,24 +116,23 @@
   Center
 
   */
-  .#{$namespace}centered        { text-align: center; * { text-align: center; } }
+  .#{$namespace}align-center        { text-align: center; }
 
   /*
 
   Right
 
   */
-  .#{$namespace}right       { text-align: right; * { text-align: right; }  }
+  .#{$namespace}align-right         { text-align: right;  }
 
   /*
 
   Left
 
   */
-  .#{$namespace}left       { text-align: left; * { text-align: left; }  }
+  .#{$namespace}align-left          { text-align: left; }
 
-  .#{$namespace}float--left { float: left}
-  .#{$namespace}float--right { float: right}
-
+  .#{$namespace}float-left          { float: left; }
+  .#{$namespace}float-right         { float: right; }
 
 }

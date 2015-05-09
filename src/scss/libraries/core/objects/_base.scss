@@ -82,71 +82,11 @@ hr {
 
 @include namespace(inline) {
     display: inline-block;
-    * {
-        display: inline-block;
-    }
 }
 
 @include namespace(block) {
     display: block;
-    * {
-        display: block;
-    }
 }
-
-@include namespace(float--left) {
-    float: left !important;
-}
-
-@include namespace(float--right) {
-    float: right !important;
-}
-
-@include namespace(float--none) {
-    float: none !important;
-}
-
-
-
-
-/* ============================================================
-
-    $ALIGNMENT UTILITIES
-
-============================================================ */
-
-@include namespace(centered) {
-    text-align: center; 
-
-    * { 
-        text-align: center; 
-    }
-
-    p {
-        display: inline-block;
-    }
-}
-
-@include namespace(right) {
-    text-align: right; 
-
-    * { 
-        text-align: right; 
-    }
-
-    p {
-        display: inline-block;
-    }
-}
-
-@include namespace(left) {
-    text-align: left; 
-
-    * { 
-        text-align: left; 
-    }
-}
-
 
 
 

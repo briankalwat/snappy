@@ -9,26 +9,74 @@
 
 	.section-primary {
 		background: $primary-color;
+
+		@include headings(1,6) {
+			color: $light-color;
+		}
+
+		p, ul, ol, small, a {
+			color: darken($primary-color, 30);
+		}
 	}
 
 	.section-secondary {
 		background: $secondary-color;
+
+		@include headings(1,6) {
+			color: $light-color;
+		}
+
+		p, ul, ol, small, a {
+			color: darken($secondary-color, 25);
+		}
 	}
 
 	.section-tertiary {
 		background: $tertiary-color;
+
+		@include headings(1,6) {
+			color: darken($primary-color, 25);
+		}
+
+		p, ul, ol, small, a {
+			color: darken($tertiary-color, 35);
+		}
 	}
 
 	.section-quadrinary {
 		background-color: $quadrinary-color;
+
+		@include headings(1,6) {
+			color: darken($primary-color, 20);
+		}
+
+		p, ul, ol, small, a {
+			color: darken($primary-color, 30);
+		}
 	}
 
 	.section-medium {
 		background: $medium-color;
+
+		@include headings(1,6) {
+			color: darken($secondary-color, 15);
+		}
+
+		p, ul, ol, small, a {
+			color: $dark-color;
+		}
 	}
 
 	.section-dark {
 		background: $dark-color;
+		
+		@include headings(1,6) {
+			color: $secondary-color;
+		}
+
+		p, ul, ol, small, a {
+			color: $light-color;
+		}
 	}
 
 }
