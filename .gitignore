@@ -1,3 +1,16 @@
 # Craft Storage (cache) [http://buildwithcraft.com/help/craft-storage-gitignore]
 /craft/storage/*
 !/craft/storage/logo/*
+
+.DS_Store
+
+# Craft Directories
+craft/app
+craft/config
+web.config
+
+# Node Modules
+node_modules
+
+# Compiled Files
+html/assets
