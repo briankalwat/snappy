@@ -4,32 +4,63 @@
 	  	font-family: $base-heading-font;
 	  	margin-bottom: $base-spacing-unit/2;
 	    font-style: italic;
-	    letter-spacing: -2px;
 	    color: $secondary-color;
+
+	    &.subheading {
+			font-weight: 800;
+			font-style: normal;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+		}
+	}
+
+	h1, h2, h3 {
+		letter-spacing: -2px;
 	}
 
 	h1 {
 		font-size: $h1;
 		line-height: $h1-height;
+		color: $dark-color;
+
+		@include media-query(handheld) {
+			font-size: $h1*.7;
+			line-height: $h1-height*.7;
+		}
 	}
 
 	h2 {
 		font-size: $h2;
 		line-height: $h2-height;
+
+		@include media-query(handheld) {
+			font-size: $h2*.75;
+			line-height: $h2-height*.75;
+		}
 	}
 
 	h3 {
 		font-size: $h3;
 		line-height: $h3-height;
+
+		@include media-query(handheld) {
+			font-size: $h3*.8;
+			line-height: $h3-height*.8;
+		}
 	}
 
 	h4, h5, h6 {
-		letter-spacing: -1px;
+		letter-spacing: -.5px;
 	}
 
 	h4 {
 		font-size: $h4;
 		line-height: $h4-height;
+
+		@include media-query(handheld) {
+			font-size: $h4*.9;
+			line-height: $h4-height*.9;
+		}
 	}
 
 	h5 {
@@ -40,13 +71,6 @@
 	h6 {
 		font-size: $h6;
 		line-height: $h6-height;
-	}
-
-	.subheading {
-		font-style: normal;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		font-weight: 600;
 	}
 
 }

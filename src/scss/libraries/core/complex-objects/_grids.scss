@@ -26,4 +26,14 @@
 		}
 	}
 
+	.section-condensed {
+		.grid {
+			margin-left: -$base-spacing-unit/2;
+		}
+
+		.grid__item {
+			padding-left: $base-spacing-unit/2;
+		}
+	}
+
 }

@@ -1,0 +1,16 @@
+html, body {
+	background-color: $dark-color;
+}
+
+.card {
+	background-color: $light-color;
+	padding: $base-spacing-unit/2.5 $base-spacing-unit/2;
+	@include radius($border-radius*2);
+
+	p, ul, ol, small, a {
+		font-size: $font-size*.9;
+		line-height: $line-height*.9;
+		letter-spacing: normal;
+		color: $dark-color;
+	}
+}

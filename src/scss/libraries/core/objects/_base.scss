@@ -37,8 +37,12 @@ body {
     max-width: $max-width;
     margin: 0 auto;
     padding: $base-spacing-unit*2 $base-spacing-unit*2;
+    
+    @include media-query(palm-wide) {
+        padding: $base-spacing-unit*1.25 $base-spacing-unit*.75;
+    }
 
-    @include media-query(handheld) {
+    @include media-query(palm) {
         padding: $base-spacing-unit*1.25 $base-spacing-unit/2;
     }
 }
@@ -54,7 +58,7 @@ body {
 
 hr {
     border: 0px solid transparent;
-    border-top: $border-size*2 solid lighten($medium-color, 42);
+    border-top: $border-size solid darken($medium-color, 5);
     margin-bottom: $base-spacing-unit;
 
     .grid + & {

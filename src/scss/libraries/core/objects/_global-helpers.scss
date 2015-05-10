@@ -15,60 +15,72 @@
     text-transform: uppercase;
 }
 
+.bold {
+    font-weight: 700;
+}
+
+.tight {
+    letter-spacing: -5px;
+}
+
+.remove-decoration {
+    text-decoration: none;
+}
+
 .color-primary {
-    color: $primary-color;
+    color: $primary-color !important;
 }
 
 .color-secondary {
-    color: $secondary-color;
+    color: $secondary-color !important;
 }
 
 .color-tertiary {
-    color: $tertiary-color;
+    color: $tertiary-color !important;
 }
 
 .color-quadrinary {
-    color: $quadrinary-color;
+    color: $quadrinary-color !important;
 }
 
 .color-medium {
-    color: $medium-color;
+    color: $medium-color !important;
 }
 
 .color-dark {
-    color: $dark-color;
+    color: $dark-color !important;
 }
 
 .color-light {
-    color: $light-color;
+    color: $light-color !important;
 }
 
 .background-primary {
-    background-color: $primary-color;
+    background-color: $primary-color !important;
 }
 
 .background-secondary {
-    background-color: $secondary-color;
+    background-color: $secondary-color !important;
 }
 
 .background-tertiary {
-    background-color: $tertiary-color;
+    background-color: $tertiary-color !important;
 }
 
 .background-quadrinary {
-    background-color: $quadrinary-color;
+    background-color: $quadrinary-color !important;
 }
 
 .background-medium {
-    background-color: $medium-color;
+    background-color: $medium-color !important;
 }
 
 .background-dark {
-    background-color: $dark-color;
+    background-color: $dark-color !important;
 }
 
 .background-light {
-    background-color: $light-color;
+    background-color: $light-color !important;
 }
 
 .soft { padding: $base-spacing-unit; }

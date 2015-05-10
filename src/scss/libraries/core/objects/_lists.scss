@@ -2,25 +2,38 @@
 
   ul, ol {
     color: $dark-color;
-    display: inline-block;
   	font-family: $base-copy-font;
     font-size: $font-size;
     line-height: $line-height;
-  	margin: 0 0 $base-spacing-unit/2 $base-spacing-unit/3;
+    list-style: none;
+    margin: 0 0 $base-spacing-unit/2 0;
 
     li {
-		  margin-bottom: $base-spacing-unit/8;
+      width: auto;
+      margin-bottom: $base-spacing-unit/10;
 
       &:last-child {
         margin-bottom: 0px;
       }
     }
 
-    &.bulleted {
-    	list-style: outside;
-    	margin: 0 0 $base-spacing-unit/2 $base-spacing-unit/2.5;
+    &.list-inline {
+      display: inline;
+
+      li {
+        display: inline;
+        margin-right: $base-spacing-unit/4;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+
+    &.list-bulleted {
+      text-align: left;
+      list-style: outside;
     }
 
   }
-
 }
