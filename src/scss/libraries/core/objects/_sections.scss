@@ -8,27 +8,21 @@
 		background-color: $light-color;
 	}
 
+	.section-primary, .section-secondary, .section-tertiary, .section-quadrinary {
+		@include headings(1,6) {
+			color: $light-color;
+
+			&.subheading {
+				color: $light-color;
+			}
+		}
+	}
+
 	.section-primary {
 		background: $primary-color;
 
-		@include headings(1,6) {
-			color: darken($secondary-color, 10);
-
-			&.subheading {
-				color: darken($secondary-color, 7);
-			}
-		}
-
-		h1 {
-			color: $light-color;
-		}
-
-		p, ul, ol, small {
+		p, ul, ol, small, a {
 			color: darken($secondary-color, 15);
-		}
-
-		a {
-			color: lighten($quadrinary-color, 5);
 		}
 
 		.btn {
@@ -56,20 +50,8 @@
 	.section-secondary {
 		background: $secondary-color;
 
-		@include headings(1,6) {
-			color: $light-color;
-
-			&.subheading {
-				color: $tertiary-color;
-			}
-		}
-
-		p, ul, ol, small {
-			color: $dark-color;
-		}
-
-		a {
-			color: lighten($primary-color, 5);
+		p, ul, ol, small, a {
+			color: darken($secondary-color, 20);
 		}
 
 		.btn {
@@ -101,16 +83,12 @@
 			color: $light-color;
 
 			&.subheading {
-				color: $quadrinary-color;
+				color: $light-color;
 			}
 		}
 
-		p, ul, ol, small {
+		p, ul, ol, small, a {
 			color: darken($tertiary-color, 35);
-		}
-
-		a {
-			color: $quadrinary-color;
 		}
 
 		.btn {
@@ -139,19 +117,15 @@
 		background-color: $quadrinary-color;
 
 		@include headings(1,6) {
-			color: $secondary-color;
+			color: darken($secondary-color, 5);
 
 			&.subheading {
-				color: darken($tertiary-color, 5);
+				color: darken($secondary-color, 5);
 			}
 		}
 
-		p, ul, ol, small {
-			color: $dark-color;
-		}
-
-		a {
-			color: darken($tertiary-color, 10);
+		p, ul, ol, small, a {
+			color: darken($secondary-color, 10);
 		}
 
 		.btn {
